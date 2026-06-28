@@ -1,0 +1,19 @@
+{
+  "item.tutorialmod.fluorite": "Fluorite",
+  "item.tutorialmod.raw_fluorite": "Raw Fluorite",
+  "creativemodetab.tutorialmod.fluorite_items": "Fluorite Tutorial Items",
+  "creativemodetab.tutorialmod.fluorite_blocks": "Fluorite Tutorial Blocks",
+  "block.tutorialmod.fluorite_block": "Block of Fluorite",
+  "block.tutorialmod.raw_fluorite_block": "Block of Raw Fluorite",
+  "block.tutorialmod.fluorite_ore": "Fluorite Ore",
+  "block.tutorialmod.fluorite_deepslate_ore": "Fluorite Deepslate Ore",
+  "item.tutorialmod.strawberry": "Strawberry",
+
+
+  "block.tutorialmod.black_opal_block": "Block of Black Opal",
+
+  "item.tutorialmod.fluorite_helmet": "Fluorite Helmet",
+  "item.tutorialmod.fluorite_chestplate": "Fluorite Chestplate",
+  "item.tutorialmod.fluorite_leggings": "Fluorite Leggings",
+  "item.tutorialmod.fluorite_boots": "Fluorite Boots"
+}
