@@ -8,12 +8,50 @@
   "block.tutorialmod.fluorite_ore": "Fluorite Ore",
   "block.tutorialmod.fluorite_deepslate_ore": "Fluorite Deepslate Ore",
   "item.tutorialmod.strawberry": "Strawberry",
-
-
+  "block.tutorialmod.seashell": "Seashell",
+  "item.tutorialmod.seashell": "Seashell",
   "block.tutorialmod.black_opal_block": "Block of Black Opal",
-
+  "block.tutorialmpd.hydrangea_hedge": "Hydrangea Hedge",
+  "block.tutorialmpd.hydrangea_bush": "Hydrangea Bush",
   "item.tutorialmod.fluorite_helmet": "Fluorite Helmet",
   "item.tutorialmod.fluorite_chestplate": "Fluorite Chestplate",
   "item.tutorialmod.fluorite_leggings": "Fluorite Leggings",
-  "item.tutorialmod.fluorite_boots": "Fluorite Boots"
+  "item.tutorialmod.fluorite_boots": "Fluorite Boots",
+
+
+
+
+  "block.tutorialmod.acacia_cabinet": "Acacia Cabinet",
+  "block.tutorialmod.cherry_cabinet": "Cherry Cabinet",
+  "block.tutorialmod.pale_oak_cabinet": "Pale Oak Cabinet",
+  "container.tutorialmod.cabinet": "Cabinet",
+  "container.tutorialmod.basket": "Basket",
+  "block.tutorialmod.wooden_basket": "Basket",
+  "block.tutorialmod.bamboo_basket": "Bamboo Basket",
+
+  "itemGroup.tutorialmod": "Tutorial Delight",
+  "block.tutorialmod.begonia": "Begonia",
+  "block.tutorialmod.potted_begonia": "Potted Begonia",
+  "item.tutorialmod.begonia": "Begonia",
+  "item.tutorialmod.petal_wreath": "Petal Wreath",
+  "item.tutorialmod.wreath": "Wreath",
+
+
+  "block.tutorialmod.potted_blue_sage": "Potted Blue Sage",
+
+
+
+
+
+  "block.tutorialmod.amaranth": "Amaranth",
+  "block.tutorialmod.potted_amaranth": "Potted Amaranth",
+  "block.tutorialmod.potted_begonia": "Potted Begonia",
+  "item.tutorialmod.blueberries": "Blueberries",
+  "block.tutorialmod.blueberry_bush": "Blueberry Bush",
+
+  "block.tutorialmod.winter_cyclamen": "Winter Cyclamen",
+  "block.tutorialmod.potted_winter_cyclamen": "Potted Winter Cyclamen",
+
+  "block.tutorialmod.purple_amaranth": "Purple Amaranth",
+  "block.tutorialmod.potted_purple_amaranth": "Potted Purple Amaranth"
 }

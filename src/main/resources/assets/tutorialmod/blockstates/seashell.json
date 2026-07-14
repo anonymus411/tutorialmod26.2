@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "tutorialmod:block/seashell",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "tutorialmod:block/seashell"
+    },
+    "facing=south": {
+      "model": "tutorialmod:block/seashell",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "tutorialmod:block/seashell",
+      "y": 270
+    }
+  }
+}

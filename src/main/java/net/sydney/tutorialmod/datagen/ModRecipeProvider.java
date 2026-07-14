@@ -47,6 +47,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("fluorite")
                         .save(output);
 
+                nineBlockStorageRecipes(RecipeCategory.MISC, ModItems.FLUORITE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.FLUORITE_BLOCK);
+
+
+
                 shapeless(RecipeCategory.MISC, ModItems.RAW_FLUORITE, 4)
                         .requires(ModItems.FLUORITE)
                         .requires(Items.STICK)

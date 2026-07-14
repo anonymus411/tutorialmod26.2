@@ -1,0 +1,7 @@
+{
+  "parent": "tutorialmod:block/template_wreath",
+  "textures": {
+    "particle": "tutorialmod:block/petal_wreath",
+    "wreath": "tutorialmod:block/petal_wreath"
+  }
+}

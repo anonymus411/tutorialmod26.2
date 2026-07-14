@@ -1,0 +1,9 @@
+{
+  "parent": "tutorialmod:block/template_basket",
+  "textures": {
+    "bottom": "tutorialmod:block/wooden_basket_bottom",
+    "handle": "tutorialmod:block/wooden_basket_handle",
+    "side": "tutorialmod:block/wooden_basket_side",
+    "top": "tutorialmod:block/wooden_basket_top"
+  }
+}

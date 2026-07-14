@@ -8,6 +8,7 @@ import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagEntry;
 import net.sydney.tutorialmod.TutorialMod;
 import net.sydney.tutorialmod.block.ModBlocks;
+import net.sydney.tutorialmod.world.level.block.TutorialBlocks;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -24,6 +25,29 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                .add(TagEntry.element(Identifier.fromNamespaceAndPath(TutorialMod.MOD_ID,"fluorite_ore")))
                .add(TagEntry.element(Identifier.fromNamespaceAndPath(TutorialMod.MOD_ID,"fluorite_deepslate_ore")));
 
+
+        getOrCreateRawBuilder(BlockTags.FLOWERS)
+                .add(TagEntry.element(Identifier.fromNamespaceAndPath(TutorialMod.MOD_ID,"begonia")));
+        getOrCreateRawBuilder(BlockTags.FLOWER_POTS)
+                .add(TagEntry.element(Identifier.fromNamespaceAndPath(TutorialMod.MOD_ID,"potted_begonia")));
+        getOrCreateRawBuilder(BlockTags.FLOWERS)
+                .add(TagEntry.element(Identifier.fromNamespaceAndPath(TutorialMod.MOD_ID,"amaranth")));
+        getOrCreateRawBuilder(BlockTags.FLOWER_POTS)
+                .add(TagEntry.element(Identifier.fromNamespaceAndPath(TutorialMod.MOD_ID,"potted_amaranth")));
+
+                   getOrCreateRawBuilder(BlockTags.FLOWERS).add(TagEntry.element(Identifier.fromNamespaceAndPath(TutorialMod.MOD_ID,"purple_amaranth")));
+        getOrCreateRawBuilder(BlockTags.FLOWER_POTS)
+                .add(TagEntry.element(Identifier.fromNamespaceAndPath(TutorialMod.MOD_ID,"potted_purple_amaranth")));
+
+
+
+
+
+
+        getOrCreateRawBuilder(BlockTags.FLOWERS)
+                .add(TagEntry.element(Identifier.fromNamespaceAndPath(TutorialMod.MOD_ID,"winter_cyclamen")));
+        getOrCreateRawBuilder(BlockTags.FLOWER_POTS)
+                .add(TagEntry.element(Identifier.fromNamespaceAndPath(TutorialMod.MOD_ID,"potted_winter_cyclamen")));
 
 
 

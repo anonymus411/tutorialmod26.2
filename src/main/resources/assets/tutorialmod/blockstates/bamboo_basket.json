@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "tutorialmod:block/bamboo_basket",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "tutorialmod:block/bamboo_basket",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "tutorialmod:block/bamboo_basket",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "tutorialmod:block/bamboo_basket",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "tutorialmod:block/bamboo_basket"
+    },
+    "facing=west": {
+      "model": "tutorialmod:block/bamboo_basket",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

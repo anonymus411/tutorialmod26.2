@@ -2,7 +2,10 @@ package net.sydney.tutorialmod;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
+import net.minecraft.core.RegistrySetBuilder;
+import net.minecraft.core.registries.Registries;
 import net.sydney.tutorialmod.datagen.*;
+
 
 public class TutorialModDataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -12,7 +15,12 @@ public class TutorialModDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModBlockTagsProvider::new);
 		pack.addProvider(ModBlockLootTableProvider::new);
-		pack.addProvider(ModRecipeProvider::new);
-		pack.addProvider(ModEquipmentAssetProvider::new);
+
+
 	}
 }
+
+
+
+
+
