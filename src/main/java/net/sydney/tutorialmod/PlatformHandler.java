@@ -63,9 +63,7 @@ public interface PlatformHandler {
      * @param validRange The max range of the POI Type
      * @return Supplier of the PoiType
      */
-    default Supplier<PoiType> registerPOIType(String id, Supplier<? extends Block> block, int maxTickets, int validRange) {
-        return register(BuiltInRegistries.POINT_OF_INTEREST_TYPE, id, () -> new PoiType(PoiTypes.getBlockStates(block.get()), maxTickets, validRange));
-    }
+
 
     /**
      * Registers a potted block with the specified block
@@ -92,6 +90,7 @@ public interface PlatformHandler {
     }
 
 
+    Supplier<PoiType> registerPOIType(String id, Supplier<? extends Block> block, int maxTickets, int validRange);
 
     /**
      * Registers a wood type with the specified id and block set type

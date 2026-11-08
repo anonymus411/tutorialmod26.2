@@ -1,0 +1,9 @@
+{
+  "parent": "tutorialmod:block/template_crop_with_rope",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "crop": "tutorialmod:block/tomatoes_old_stage1",
+    "rope_side": "tutorialmod:block/tomatoes_coiled_rope",
+    "rope_top": "tutorialmod:block/rope_top"
+  }
+}

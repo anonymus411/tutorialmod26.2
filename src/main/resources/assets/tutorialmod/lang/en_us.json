@@ -1,4 +1,104 @@
 {
+  "block.tutorialmod.stove": "Stove",
+
+  "block..tutorialmod.brown_mushroom_colony": "Brown Mushroom Colony",
+  "block..tutorialmod.red_mushroom_colony": "Red Mushroom Colony",
+
+  "item.tutorialmod.wheat_dough": "Wheat Dough",
+  "item.tutorialmod.cherry_petals": "Cherry Petals",
+  "item.tutorialmod.flint_knife": "Flint Knife",
+  "container.tutorialmod.recipe_book.cookable": "Showing Cookable",
+  "container.tutorialmod.cooking_pot": "Cooking Pot",
+  "container.tutorialmod.cooking_pot.served_on": "Served on: %s",
+  "container.tutorialmodt.cooking_pot.not_heated": "Needs heat from below",
+  "container.tutorialmod.cooking_pot.heated": "Heated",
+
+  "item.tutorialmod.glass_acacia_cabinet": "Glass Acacia Cabinet",
+
+  "block.tutorialmod.spruce_chiseled_bookshelf": "Spruce Chiseled Bookshelf" ,
+  "block.tutorialmod.birch_chiseled_bookshelf": "Birch Chiseled Bookshelf" ,
+  "block.tutorialmod.jungle_chiseled_bookshelf": "Jungle Chiseled Bookshelf" ,
+  "block.tutorialmod.acacia_chiseled_bookshelf": "Acacia Chiseled Bookshelf" ,
+  "block.tutorialmod.dark_oak_chiseled_bookshelf": "Dark Oak Chiseled Bookshelf" ,
+  "block.tutorialmod.pale_oak_chiseled_bookshelf": "Pale Oak Chiseled Bookshelf" ,
+  "block.tutorialmod.mangrove_chiseled_bookshelf": "Mangrove Chiseled Bookshelf" ,
+  "block.tutorialmod.cherry_chiseled_bookshelf": "Cherry Chiseled Bookshelf" ,
+  "block.tutorialmod.bamboo_chiseled_bookshelf": "Bamboo Chiseled Bookshelf" ,
+  "block.tutorialmod.crimson_chiseled_bookshelf": "Crimson Chiseled Bookshelf" ,
+  "block.tutorialmod.warped_chiseled_bookshelf": "Warped Chiseled Bookshelf",
+
+
+
+  "creativetab.tutorialmod.tutorial_items": "Tutorial Items",
+  "creativetab.tutorialmod.tutorialmod_blocks": "Tutorial Blocks",
+
+
+
+
+
+  "item.tutorialmod.acacia_cabinet_with_glass_doors": "Acacia Cabinet with Glass Doors",
+
+  "container.tutorialmod.glass_cabinet": "Glass Cabinet",
+
+
+
+
+
+  "block.tutorialmod.oak_barrel": "Oak Barrel" ,
+  "block.tutorialmod.birch_barrel": "Birch Barrel" ,
+  "block.tutorialmod.jungle_barrel": "Jungle Barrel" ,
+  "block.tutorialmod.acacia_barrel": "Acacia Barrel" ,
+  "block.tutorialmod.dark_oak_barrel": "Dark Oak Barrel" ,
+  "block.tutorialmod.pale_oak_barrel": "Pale Oak Barrel" ,
+  "block.tutorialmod.mangrove_barrel": "Mangrove Barrel" ,
+  "block.tutorialmod.cherry_barrel": "Cherry Barrel" ,
+  "block.tutorialmod.bamboo_barrel": "Bamboo Barrel" ,
+  "block.tutorialmod.crimson_barrel": "Crimson Barrel" ,
+  "block.tutorialmod.warped_barrel": "Warped Barrel" ,
+  "container.tutorialmod.oak_barrel": "Oak Barrel" ,
+  "container.tutorialmod.birch_barrel": "Birch Barrel" ,
+  "container.tutorialmod.jungle_barrel": "Jungle Barrel" ,
+  "container.tutorialmod.acacia_barrel": "Acacia Barrel" ,
+  "container.tutorialmod.dark_oak_barrel": "Dark Oak Barrel" ,
+  "container.tutorialmod.pale_oak_barrel": "Pale Oak Barrel" ,
+  "container.tutorialmod.mangrove_barrel": "Mangrove Barrel" ,
+  "container.tutorialmod.cherry_barrel": "Cherry Barrel" ,
+  "container.tutorialmod.bamboo_barrel": "Bamboo Barrel" ,
+  "container.tutorialmod.crimson_barrel": "Crimson Barrel" ,
+  "container.tutorialmod.warped_barrel": "Warped Barrel",
+  "block_type.tutorialmod.barrel": "%s Barrel",
+  "tag.item.tutorialmod.barrels": "Barrel Variants",
+
+
+  "block.additionallanterns.andesite_lantern": "Andesite Lantern",
+
+
+
+  "tooltip.tutorialmod.cooking_pot.empty": "Empty",
+  "tooltip.tutorialmod.cooking_pot.single_serving": "Holds 1 serving of:",
+  "tooltip.tutorialmod.cooking_pot.many_servings": "Holds %s servings of:",
+
+
+  "block.tutorialmod.cutting_board": "Cutting Board",
+
+  "block.tutorialmod.cutting_board.invalid_item": "This doesn't seem cuttable...",
+  "block.tutorialmod.cutting_board.invalid_tool": "Maybe with a different tool...",
+
+
+
+
+
+  "tooltip.tutorialmod.cooking_pot.empty": "Empty",
+  "tooltip.tutorialmod.cooking_pot.single_serving": "Holds 1 serving of:",
+  "tooltip.tutorialmod.cooking_pot.many_servings": "Holds %s servings of:",
+
+
+  "tooltip.tutorialmod.placeable": "Placeable",
+  "tooltip.tutorialmod.placeable_sneaking": "Placeable when sneaking",
+
+
+  "block.tutorialmod.cooking_pot": "Cooking Pot",
+  "block.tutorialmod.cutting_board": "Cutting Board",
   "item.tutorialmod.fluorite": "Fluorite",
   "item.tutorialmod.raw_fluorite": "Raw Fluorite",
   "creativemodetab.tutorialmod.fluorite_items": "Fluorite Tutorial Items",
@@ -18,7 +118,11 @@
   "item.tutorialmod.fluorite_leggings": "Fluorite Leggings",
   "item.tutorialmod.fluorite_boots": "Fluorite Boots",
 
+  "block.tutorialmod.potted_cyan_hyacinth": "Potted Cyan Hyacinth",
+  "block.tutorialmod. cyan_hyacinth": "Cyan Hyacinth",
 
+  "block.tutorialmod.potted_chrysanthenum": "Potted Chrysanthenum",
+  "block.tutorialmod.chrysanthenum": "Chrysanthenum",
 
 
   "block.tutorialmod.acacia_cabinet": "Acacia Cabinet",
@@ -30,18 +134,39 @@
   "block.tutorialmod.bamboo_basket": "Bamboo Basket",
 
   "itemGroup.tutorialmod": "Tutorial Delight",
-  "block.tutorialmod.begonia": "Begonia",
-  "block.tutorialmod.potted_begonia": "Potted Begonia",
-  "item.tutorialmod.begonia": "Begonia",
+
+  "block.tutorialmod.winter_cyclamen": "Winter Cyclamen",
+  "block.tutorialmod.potted_winter_cyclamen": "Potted Winter Cyclamen",
+
+  "block.tutorialmod.purple_amaranth": "Purple Amaranth",
+  "block.tutorialmod.potted_purple_amaranth": "Potted Purple Amaranth",
   "item.tutorialmod.petal_wreath": "Petal Wreath",
   "item.tutorialmod.wreath": "Wreath",
 
 
   "block.tutorialmod.potted_blue_sage": "Potted Blue Sage",
+  "block.tutorialmod.potted_blue_rose_bush": "Potted Blue Rose Bush",
+  "block.tutorialmod.angelica": "Angelica",
+  "block.tutorialmod.potted_angelica": "Potted Angelca",
+
+  "block.tutorialmod.angelica": "Angelica",
+  "block.tutorialmod.potted_angelica": "Potted Angelca",
+  "block.tutorialmod.potted_crocus": "Potted Crocus",
+  "block.tutorialmod.crocus": "Crocus",
 
 
+  "block.tutorialmod.potted_guzmania": "Potted Guzmania",
+  "block.tutorialmod.guzmania": "Guzmania",
 
+  "block.tutorialmod.blue_rose_bush": "Blue Rose Bush",
 
+  "block.tutorialmod.delphinium": "Delphinium",
+
+  "block.tutorialmod.potted_fairy_slipper": "Potted Fairy Slipper",
+  "block.tutorialmod.fairy_slipper": "Fairy Slipper",
+
+  "block.tutorialmod.potted_calla_lily": "Potted Calla Lily",
+  "block.tutorialmod.calla_lily": "Calla Lily",
 
   "block.tutorialmod.amaranth": "Amaranth",
   "block.tutorialmod.potted_amaranth": "Potted Amaranth",
@@ -49,9 +174,217 @@
   "item.tutorialmod.blueberries": "Blueberries",
   "block.tutorialmod.blueberry_bush": "Blueberry Bush",
 
-  "block.tutorialmod.winter_cyclamen": "Winter Cyclamen",
-  "block.tutorialmod.potted_winter_cyclamen": "Potted Winter Cyclamen",
 
-  "block.tutorialmod.purple_amaranth": "Purple Amaranth",
-  "block.tutorialmod.potted_purple_amaranth": "Potted Purple Amaranth"
+  "item.tutorialmod.copper_knife": "Copper Knife",
+  "item.tutorialmod.iron_knife": "Iron Knife",
+  "item.tutorialmod.golden_knife": "Golden Knife",
+  "item.tutorialmod.diamond_knife": "Diamond Knife",
+  "item.tutorialmod.netherite_knife": "Netherite Knife",
+
+
+  "item.tutorialmod.cake_slice": "Slice of Cake",
+  "item.tutorialmod.apple_pie_slice": "Slice of Apple Pie",
+  "item.tutorialmod.sweet_berry_cheesecake_slice": "Slice of Sweet Berry Cheesecake",
+  "item.tutorialmod.chocolate_pie_slice": "Slice of Chocolate Pie",
+  "item.tutorialmod.pumpkin_pie_slice": "Slice of Pumpkin Pie",
+
+  "block.tutorialmod.apple_pie": "Apple Pie",
+  "block.tutorialmod.sweet_berry_cheesecake": "Sweet Berry Cheesecake",
+  "block.tutorialmod.chocolate_pie": "Chocolate Pie",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "block.tutorialmod.skillet": "Skillet",
+
+  "block.tutorialmod.oak_cabinet": "Oak Cabinet",
+  "block.tutorialmod.birch_cabinet": "Birch Cabinet",
+  "block.tutorialmod.spruce_cabinet": "Spruce Cabinet",
+  "block.tutorialmod.jungle_cabinet": "Jungle Cabinet",
+
+  "block.tutorialmod.dark_oak_cabinet": "Dark Oak Cabinet",
+  "block.tutorialmod.mangrove_cabinet": "Mangrove Cabinet",
+
+  "block.tutorialmod.bamboo_cabinet": "Bamboo Cabinet",
+  "block.tutorialmod.crimson_cabinet": "Crimson Cabinet",
+  "block.tutorialmod.warped_cabinet": "Warped Cabinet",
+  "block.tutorialmod.rope": "Rope",
+  "block.tutorialmod.rope_fence": "Rope Fence",
+  "block.tutorialmod.rope_fence_gate": "Rope Fence Gate",
+  "block.tutorialmod.safety_net": "Safety Net",
+  "block.tutorialmod.canvas_rug": "Canvas Rug",
+  "block.tutorialmod.tatami": "Tatami Block",
+  "block.tutorialmod.full_tatami_mat": "Full Tatami Mat",
+  "block.tutorialmod.half_tatami_mat": "Half Tatami Mat",
+  "block.tutorialmod.organic_compost": "Organic Compost",
+  "block.tutorialmod.rich_soil": "Rich Soil",
+  "block.tutorialmod.rich_soil_farmland": "Rich Soil Farmland",
+  "block.tutorialmod.carrot_crate": "Carrot Crate",
+  "block.tutorialmod.potato_crate": "Potato Crate",
+  "block.tutorialmod.beetroot_crate": "Beetroot Crate",
+  "block.tutorialmod.cabbage_crate": "Cabbage Crate",
+  "block.tutorialmod.tomato_crate": "Tomato Crate",
+  "block.tutorialmod.onion_crate": "Onion Crate",
+  "block.tutorialmod.rice_bale": "Rice Bale",
+  "block.tutorialmod.rice_bag": "Bag of Rice",
+  "block.tutorialmod.straw_bale": "Straw Bale",
+
+
+  "block.tutorialmod.cabbages": "Cabbage",
+  "item.tutorialmod.cabbage_seeds": "Cabbage Seeds",
+  "item.tutorialmod.cabbage": "Cabbage",
+  "block.tutorialmod.strawberry_cake": "Strawberry Cake",
+  "block.tutorialmod.banana_cake": "Banana Cake",
+  "block.tutorialmod.adzuki_cake": "Adzuki Cake",
+  "block.tutorialmod.mint_cake": "Mint Cake",
+  "item.tutorialmod.adzuki_cake": "Adzuki Cake",
+  "item.tutorialmod.syrup": "Syrup",
+  "item.tutorialmod.pancake": "Pancake",
+  "block.tutorialmod.pancakes": "Pancakes",
+  "item.tutorialmod.cherry_blossom_pancake": "Cherry Blossom Pancake",
+
+
+
+
+
+  "item.tutorialmod.artichoke": "Artichoke",
+  "item.tutorialmod.asparagus": "Asparagus",
+  "item.tutorialmod.bellpepper": "Bell Pepper",
+  "item.tutorialmod.blackbean": "Black Bean",
+  "item.tutorialmod.blackberry": "Blackberry",
+  "item.tutorialmod.blueberry": "Blueberry",
+  "item.tutorialmod.broccoli": "Broccoli",
+  "item.tutorialmod.cabbage": "Cabbage",
+  "item.tutorialmod.cantaloupe": "Cantaloupe",
+  "item.tutorialmod.cauliflower": "Cauliflower",
+  "item.tutorialmod.celery": "Celery",
+  "item.tutorialmod.coffee_beans": "Coffee Beans",
+  "item.tutorialmod.corn": "Corn",
+  "item.tutorialmod.cranberry": "Cranberry",
+  "item.tutorialmod.cucumber": "Cucumber",
+  "item.tutorialmod.currant": "Currant",
+  "item.tutorialmod.eggplant": "Eggplant",
+  "item.tutorialmod.elderberry": "Elderberry",
+  "item.tutorialmod.garlic": "Garlic",
+  "item.tutorialmod.grape": "Grape",
+  "item.tutorialmod.greenbean": "Green Bean",
+  "item.tutorialmod.greenonion": "Green Onion",
+  "item.tutorialmod.honeydew": "Honeydew",
+  "item.tutorialmod.hops": "Hops",
+  "item.tutorialmod.kale": "Kale",
+  "item.tutorialmod.kiwi": "Kiwi",
+  "item.tutorialmod.leek": "Leek",
+  "item.tutorialmod.lettuce": "Lettuce",
+  "item.tutorialmod.olive": "Olive",
+  "item.tutorialmod.onion": "Onion",
+  "item.tutorialmod.peanut": "Peanut",
+  "item.tutorialmod.pineapple": "Pineapple",
+  "item.tutorialmod.radish": "Radish",
+  "item.tutorialmod.raspberry": "Raspberry",
+  "item.tutorialmod.rhubarb": "Rhubarb",
+  "item.tutorialmod.rice": "Rice",
+  "item.tutorialmod.rutabaga": "Rutabaga",
+  "item.tutorialmod.saguaro": "Saguaro",
+  "item.tutorialmod.spinach": "Spinach",
+  "item.tutorialmod.squash": "Squash",
+  "item.tutorialmod.strawberry": "Strawberry",
+  "item.tutorialmod.sweetpotato": "Sweet Potato",
+  "item.tutorialmod.tomatillo": "Tomatillo",
+  "item.tutorialmod.tomato": "Tomato",
+  "item.tutorialmod.turnip": "Turnip",
+  "item.tutorialmod.yam": "Yam",
+  "item.tutorialmod.zucchini": "Zucchini",
+  "item.tutorialmod.artichoke_seed": "Artichoke Seeds",
+  "item.tutorialmod.asparagus_seed": "Asparagus Seeds",
+  "item.tutorialmod.bellpepper_seed": "Bell Pepper Seeds",
+  "item.tutorialmod.blackbean_seed": "Black Bean Seeds",
+  "item.tutorialmod.blackberry_seed": "Blackberry Seeds",
+  "item.tutorialmod.blueberry_seed": "Blueberry Seeds",
+  "item.tutorialmod.broccoli_seed": "Broccoli Seeds",
+  "item.tutorialmod.cabbage_seed": "Cabbage Seeds",
+  "item.tutorialmod.cantaloupe_seed": "Cantaloupe Seeds",
+  "item.tutorialmod.cauliflower_seed": "Cauliflower Seeds",
+  "item.tutorialmod.celery_seed": "Celery Seeds",
+  "item.tutorialmod.coffee_seed": "Coffee Seeds",
+  "item.tutorialmod.corn_seed": "Corn Seeds",
+  "item.tutorialmod.cranberry_seed": "Cranberry Seeds",
+  "item.tutorialmod.cucumber_seed": "Cucumber Seeds",
+  "item.tutorialmod.currant_seed": "Currant Seeds",
+  "item.tutorialmod.eggplant_seed": "Eggplant Seeds",
+  "item.tutorialmod.elderberry_seed": "Elderberry Seeds",
+  "item.tutorialmod.garlic_seed": "Garlic Seeds",
+  "item.tutorialmod.grape_seed": "Grape Seeds",
+  "item.tutorialmod.greenbean_seed": "Green Bean Seeds",
+  "item.tutorialmod.greenonion_seed": "Green Onion Seeds",
+  "item.tutorialmod.honeydew_seed": "Honeydew Seeds",
+  "item.tutorialmod.hops_seed": "Hops Seeds",
+  "item.tutorialmod.kale_seed": "Kale Seeds",
+  "item.tutorialmod.kiwi_seed": "Kiwi Seeds",
+  "item.tutorialmod.leek_seed": "Leek Seeds",
+  "item.tutorialmod.lettuce_seed": "Lettuce Seeds",
+  "item.tutorialmod.olive_seed": "Olive Seeds",
+  "item.tutorialmod.onion_seed": "Onion Seeds",
+  "item.tutorialmod.peanut_seed": "Peanut Seeds",
+  "item.tutorialmod.pineapple_seed": "Pineapple Seeds",
+  "item.tutorialmod.radish_seed": "Radish Seeds",
+  "item.tutorialmod.raspberry_seed": "Raspberry Seeds",
+  "item.tutorialmod.rhubarb_seed": "Rhubarb Seeds",
+  "item.tutorialmod.rice_seed": "Rice Seeds",
+  "item.tutorialmod.rutabaga_seed": "Rutabaga Seeds",
+  "item.tutorialmod.saguaro_seed": "Saguaro Seeds",
+  "item.tutorialmod.spinach_seed": "Spinach Seeds",
+  "item.tutorialmod.squash_seed": "Squash Seeds",
+  "item.tutorialmod.strawberry_seed": "Strawberry Seeds",
+  "item.tutorialmod.sweetpotato_seed": "Sweet Potato Seeds",
+  "item.tutorialmod.tomatillo_seed": "Tomatillo Seeds",
+  "item.tutorialmod.tomato_seed": "Tomato Seeds",
+  "item.tutorialmod.turnip_seed": "Turnip Seeds",
+  "item.tutorialmod.yam_seed": "Yam Seeds",
+  "item.tutorialmod.zucchini_seed": "Zucchini Seeds",
+  "item.tutorialmod.oat_seed": "Oats Seeds",
+  "item.tutorialmod.mustard_seed": "Mustard Seeds",
+  "item.tutorialmod.pepper_seed": "Pepper Seeds",
+  "item.tutorialmod.turmeric_seed": "Turmeric Seeds",
+  "item.tutorialmod.ginger_seed": "Ginger Seeds",
+  "item.tutorialmod.basil_seed": "Basil Seeds",
+  "item.tutorialmod.chile_pepper_seed": "Chile Pepper Seeds",
+  "item.tutorialmod.barley_seed": "Barley Seeds",
+  "item.tutorialmod.soybean_seed": "Soybean Seeds",
+  "item.tutorialmod.barley": "Barley",
+  "item.tutorialmod.oat": "Oats",
+  "item.tutorialmod.soybean": "Soybeans",
+  "item.tutorialmod.grapefruit": "Grapefruit",
+  "item.tutorialmod.kumquat": "Kumquat",
+  "item.tutorialmod.orange": "Orange",
+  "item.tutorialmod.banana": "Banana",
+  "item.tutorialmod.persimmon": "Persimmon",
+  "item.tutorialmod.plum": "Plum",
+  "item.tutorialmod.cherry": "Cherry",
+  "item.tutorialmod.lemon": "Lemon",
+  "item.tutorialmod.peach": "Peach",
+  "item.tutorialmod.coconut": "Coconut",
+  "item.tutorialmod.nutmeg": "Nutmeg",
+  "item.tutorialmod.fig": "Fig",
+  "item.tutorialmod.nectarine": "Nectarine",
+  "item.tutorialmod.mango": "Mango",
+  "item.tutorialmod.dragonfruit": "Dragon Fruit",
+  "item.tutorialmod.starfruit": "Star Fruit",
+  "item.tutorialmod.almond": "Almond",
+  "item.tutorialmod.cashew": "Cashew",
+  "item.tutorialmod.pecan": "Pecan",
+  "item.tutorialmod.walnut": "Walnut"
 }

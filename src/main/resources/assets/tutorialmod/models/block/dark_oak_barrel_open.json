@@ -1,0 +1,9 @@
+{
+    "parent": "minecraft:block/cube_bottom_top",
+    "textures": {
+        "bottom": "tutorialmod:block/dark_oak_barrel_bottom",
+        "side": "tutorialmod:block/dark_oak_barrel_side",
+        "top": "tutorialmod:block/dark_oak_barrel_top_open",
+        "particle": "minecraft:block/dark_oak_planks"
+    }
+}

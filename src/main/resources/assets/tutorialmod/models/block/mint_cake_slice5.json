@@ -1,0 +1,10 @@
+{
+  "parent": "block/cake_slice5",
+  "textures": {
+    "particle": "tutorialmod:block/mint_cake_side",
+    "bottom": "tutorialmod:block/mint_cake_bottom",
+    "top": "tutorialmod:block/mint_cake_top",
+    "side": "tutorialmod:block/mint_cake_side",
+    "inside": "tutorialmod:block/mint_cake_inner"
+  }
+}

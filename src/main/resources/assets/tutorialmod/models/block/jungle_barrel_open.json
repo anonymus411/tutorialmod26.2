@@ -1,0 +1,9 @@
+{
+    "parent": "minecraft:block/cube_bottom_top",
+    "textures": {
+        "bottom": "tutorialmod:block/jungle_barrel_bottom",
+        "side": "tutorialmod:block/jungle_barrel_side",
+        "top": "tutorialmod:block/jungle_barrel_top_open",
+        "particle": "minecraft:block/jungle_planks"
+    }
+}

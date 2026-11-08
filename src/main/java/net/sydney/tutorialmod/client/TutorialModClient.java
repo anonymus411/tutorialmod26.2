@@ -1,20 +1,17 @@
 package net.sydney.tutorialmod.client;
 
-import net.minecraft.client.renderer.entity.EntityRendererProvider;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.EntityType;
+import net.fabricmc.api.ClientModInitializer;
+
+public class TutorialModClient implements ClientModInitializer {
+    public static boolean naturalRegenerationEnabled = false;
+
+    @Override
+    public void onInitializeClient() {
 
 
+        // rendering stuff
+    }
 
-import java.util.Arrays;
-import java.util.function.BiConsumer;
-import java.util.function.Consumer;
-
-public class TutorialModClient {
-    public static void onInitialize(){}
-
-        public static void registerEntityRenderers(BiConsumer<EntityType<? extends Entity>, EntityRendererProvider> consumer) {
-
-        }
 }
+
 

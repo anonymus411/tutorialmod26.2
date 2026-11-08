@@ -1,0 +1,6 @@
+{
+  "parent": "tutorialmod:item/mug",
+  "textures": {
+    "layer0": "tutorialmod:item/hot_cocoa"
+  }
+}

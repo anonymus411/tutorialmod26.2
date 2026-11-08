@@ -1,0 +1,14 @@
+{
+  "model": {
+    "type": "minecraft:condition",
+    "property": "tutorialmod:skillet/is_cooking",
+    "on_true": {
+      "type": "tutorialmod:skillet_flip",
+      "model": "tutorialmod:item/skillet_cooking"
+    },
+    "on_false": {
+      "type": "minecraft:model",
+      "model": "tutorialmod:item/skillet"
+    }
+  }
+}

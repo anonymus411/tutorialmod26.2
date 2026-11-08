@@ -1,0 +1,9 @@
+{
+    "parent": "minecraft:block/cube_bottom_top",
+    "textures": {
+        "bottom": "tutorialmod:block/birch_barrel_bottom",
+        "side": "tutorialmod:block/birch_barrel_side",
+        "top": "tutorialmod:block/birch_barrel_top_open",
+        "particle": "minecraft:block/birch_planks"
+    }
+}

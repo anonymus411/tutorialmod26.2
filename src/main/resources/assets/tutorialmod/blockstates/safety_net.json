@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "tutorialmod:block/safety_net"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "tutorialmod:block/tutorialmod_leaves",
+  "textures": {
+    "all": "minecraft:block/oak_leaves",
+    "crop": "tutorialmod:block/plum_ripe"
+  }
+}

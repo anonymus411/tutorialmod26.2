@@ -1,0 +1,6 @@
+{
+  "parent": "tutorialmod:block/crop_cross_double",
+  "textures": {
+    "cross": "tutorialmod:block/corn_crop_stage0"
+  }
+}

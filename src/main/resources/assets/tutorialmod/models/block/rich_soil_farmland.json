@@ -1,0 +1,8 @@
+{
+  "parent": "tutorialmod:block/template_farmland_custom",
+  "textures": {
+    "bottom": "tutorialmod:block/rich_soil",
+    "side": "tutorialmod:block/rich_soil",
+    "top": "tutorialmod:block/rich_soil_farmland"
+  }
+}

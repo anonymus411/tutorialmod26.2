@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "tutorialmod:block/rice_bag_bottom",
+    "east": "tutorialmod:block/rice_bag_side",
+    "north": "tutorialmod:block/rice_bag_side_tied",
+    "particle": "tutorialmod:block/rice_bag_top",
+    "south": "tutorialmod:block/rice_bag_side_tied",
+    "up": "tutorialmod:block/rice_bag_top",
+    "west": "tutorialmod:block/rice_bag_side"
+  }
+}

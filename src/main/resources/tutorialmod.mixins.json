@@ -3,7 +3,46 @@
 	"package": "net.sydney.tutorialmod.mixin",
 	"compatibilityLevel": "JAVA_25",
 	"mixins": [
-		"ExampleMixin"
+
+		"datafix.ItemStackComponentizationFixMixin",
+		"datafix.V1460Mixin",
+		"datafix.V3818_3Mixin",
+		"refabricated.RecipeBookSettingsMixin",
+		"refabricated.RecipeBookSettingsTypeSettingsInvoker",
+		"refabricated.RecipeBookTypeMixin",
+
+
+
+		"CampfireBaleMixin",
+
+
+
+		"refabricated.FoodDataAccessor",
+		"refabricated.GameRulesTypeAccessor",
+		"refabricated.GhostSlotsInvoker",
+		"refabricated.GuiGraphicsExtractorAccessor",
+
+		"refabricated.LevelMixin",
+
+		"refabricated.RecipeBookSettingsMixin",
+		"refabricated.RecipeBookSettingsTypeSettingsInvoker",
+		"refabricated.RecipeBookTypeMixin",
+
+
+		"PoiTypesAccessor"
+
+	],
+	"client": [
+		"refabricated.AbstractRecipeBookScreenAccessor",
+
+
+
+
+
+		"refabricated.CuboidItemModelWrapperAccessor"
+
+
+
 	],
 	"injectors": {
 		"defaultRequire": 1

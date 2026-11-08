@@ -1,0 +1,9 @@
+{
+  "parent": "tutorialmod:block/template_pie_slice2",
+  "textures": {
+    "bottom": "tutorialmod:block/pie_bottom",
+    "inner": "tutorialmod:block/apple_pie_inner",
+    "side": "tutorialmod:block/pie_side",
+    "top": "tutorialmod:block/apple_pie_top"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "tutorialmod:block/tutorialmod_leaves",
+  "textures": {
+    "all": "minecraft:block/jungle_leaves",
+    "crop": "tutorialmod:block/banana_unripe"
+  }
+}

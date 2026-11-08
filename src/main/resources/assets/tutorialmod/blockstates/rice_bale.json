@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "tutorialmod:block/rice_bale",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "tutorialmod:block/rice_bale",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "tutorialmod:block/rice_bale",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "tutorialmod:block/rice_bale",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "tutorialmod:block/rice_bale"
+    },
+    "facing=west": {
+      "model": "tutorialmod:block/rice_bale",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

@@ -3,6 +3,8 @@ pluginManagement {
 		maven {
 			name = 'Fabric'
 			url = 'https://maven.fabricmc.net/'
+
+			maven { url "https://maven.architectury.dev/" }
 		}
 		mavenCentral()
 		gradlePluginPortal()
@@ -10,5 +12,5 @@ pluginManagement {
 	}
 }
 
-// Should match your modid
+// Should match your MOD_ID
 rootProject.name = 'tutorialmod'

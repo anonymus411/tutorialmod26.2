@@ -1,0 +1,9 @@
+{
+    "parent": "minecraft:block/cube_bottom_top",
+    "textures": {
+        "bottom": "tutorialmod:block/cherry_barrel_bottom",
+        "side": "tutorialmod:block/cherry_barrel_side",
+        "top": "tutorialmod:block/cherry_barrel_top",
+        "particle": "minecraft:block/cherry_planks"
+    }
+}

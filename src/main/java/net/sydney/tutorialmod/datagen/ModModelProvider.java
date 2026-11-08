@@ -4,16 +4,8 @@ import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
-import net.minecraft.client.data.models.model.ModelTemplate;
-import net.minecraft.client.data.models.model.ModelTemplates;
-import net.minecraft.client.data.models.model.TextureMapping;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.sydney.tutorialmod.block.ModBlocks;
-import net.sydney.tutorialmod.item.ModItems;
-import net.sydney.tutorialmod.world.item.TutorialItems;
-import net.sydney.tutorialmod.world.level.block.TutorialBlocks;
 
+import net.sydney.tutorialmod.block.ModBlocks;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricPackOutput output) {
@@ -22,29 +14,23 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockModelGenerators blockModelGenerators) {
-
-        // blockModelGenerators.createTrivialCube(ModBlocks.FLUORITE_BLOCK);
-        blockModelGenerators.createTrivialCube(ModBlocks.RAW_FLUORITE_BLOCK);
-        blockModelGenerators.createTrivialCube(ModBlocks.FLUORITE_ORE);
-        blockModelGenerators.createTrivialCube(ModBlocks.FLUORITE_DEEPSLATE_ORE);
-        blockModelGenerators.createTrivialCube(ModBlocks.BLACK_OPAL_BLOCK);
-        blockModelGenerators.createTrivialCube(ModBlocks.FLUORITE_BLOCK);
-
-        blockModelGenerators.createPlantWithDefaultItem(ModBlocks.BEGONIA, ModBlocks.POTTED_BEGONIA, BlockModelGenerators.PlantType.TINTED);
+        blockModelGenerators.createPlantWithDefaultItem(ModBlocks.PETUNIA, ModBlocks.POTTED_PETUNIA, BlockModelGenerators.PlantType.TINTED);
         blockModelGenerators.createPlantWithDefaultItem(ModBlocks.AMARANTH, ModBlocks.POTTED_AMARANTH, BlockModelGenerators.PlantType.TINTED);
+        blockModelGenerators.createPlantWithDefaultItem(ModBlocks.CALLA_LILY, ModBlocks.POTTED_CALLA_LILY, BlockModelGenerators.PlantType.TINTED);
         blockModelGenerators.createPlantWithDefaultItem(ModBlocks.PURPLE_AMARANTH, ModBlocks.POTTED_PURPLE_AMARANTH, BlockModelGenerators.PlantType.TINTED);
+blockModelGenerators.createPlantWithDefaultItem(ModBlocks.WINTER_CYCLAMEN, ModBlocks.POTTED_WINTER_CYCLAMEN,BlockModelGenerators.PlantType.TINTED);
+blockModelGenerators.createPlantWithDefaultItem(ModBlocks.CYAN_HYACINTH,ModBlocks.POTTED_CYAN_HYACINTH,BlockModelGenerators.PlantType.TINTED);
+        blockModelGenerators.createPlantWithDefaultItem(ModBlocks.CHRYSANTHENUM, ModBlocks.POTTED_CHRYSANTHENUM, BlockModelGenerators.PlantType.TINTED);
 
 
-
-        blockModelGenerators.createPlantWithDefaultItem(ModBlocks.WINTER_CYCLAMEN, ModBlocks.POTTED_WINTER_CYCLAMEN, BlockModelGenerators.PlantType.TINTED);
-
+        blockModelGenerators.createPlantWithDefaultItem(ModBlocks.ANGELICA, ModBlocks.POTTED_ANGELICA, BlockModelGenerators.PlantType.TINTED);
+        blockModelGenerators.createPlantWithDefaultItem(ModBlocks.CROCUS, ModBlocks.POTTED_CROCUS, BlockModelGenerators.PlantType.TINTED);
+        blockModelGenerators.createPlantWithDefaultItem(ModBlocks.FAIRY_SLIPPER, ModBlocks.POTTED_FAIRY_SLIPPER, BlockModelGenerators.PlantType.TINTED);
+        blockModelGenerators.createPlantWithDefaultItem(ModBlocks.GUZMANIA, ModBlocks.POTTED_GUZMANIA, BlockModelGenerators.PlantType.TINTED);
+blockModelGenerators.createDoublePlantWithDefaultItem(ModBlocks.BLUE_ROSE_BUSH, BlockModelGenerators.PlantType.TINTED);
+        blockModelGenerators.createDoublePlantWithDefaultItem(ModBlocks.POTTED_BLUE_ROSE_BUSH, BlockModelGenerators.PlantType.TINTED);
     }
 
     @Override
-    public void generateItemModels(ItemModelGenerators itemModelGenerators) {
-        itemModelGenerators.generateFlatItem(ModItems.FLUORITE, ModelTemplates.FLAT_ITEM);
-        itemModelGenerators.generateFlatItem(ModItems.RAW_FLUORITE, ModelTemplates.FLAT_ITEM);
-
+    public void generateItemModels(ItemModelGenerators itemModelGenerators){}
     }
-}
-

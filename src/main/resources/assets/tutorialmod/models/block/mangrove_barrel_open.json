@@ -1,0 +1,9 @@
+{
+    "parent": "minecraft:block/cube_bottom_top",
+    "textures": {
+        "bottom": "tutorialmod:block/mangrove_barrel_bottom",
+        "side": "tutorialmod:block/mangrove_barrel_side",
+        "top": "tutorialmod:block/mangrove_barrel_top_open",
+        "particle": "minecraft:block/mangrove_planks"
+    }
+}

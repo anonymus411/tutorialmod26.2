@@ -1,0 +1,65 @@
+package net.sydney.tutorialmod.init;
+
+import com.google.common.collect.ImmutableList;
+import com.google.common.collect.ImmutableSet;
+
+import net.minecraft.core.Holder;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.world.entity.ai.village.poi.PoiType;
+import net.minecraft.world.entity.ai.village.poi.PoiTypes;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockState;
+import net.sydney.tutorialmod.mixin.PoiTypesAccessor;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+public class MoreBarrelPointOfInterestTypes {
+    public static void init() {
+        addBarrelsToPoi(MoreBarrelBlocks.more_barrels);
+    }
+
+    public static boolean barrelsContainPoi(List<Block> barrels) {
+        Map<BlockState, Holder<PoiType>> poiStatesToType = PoiTypesAccessor
+                .getPointOfInterestStatesToType();
+
+        Holder<PoiType> fishermanEntry = BuiltInRegistries.POINT_OF_INTEREST_TYPE
+                .get(PoiTypes.FISHERMAN).get();
+
+        for (Block block : barrels) {
+            ImmutableList<BlockState> blockStates = block.getStateDefinition().getPossibleStates();
+
+            for (BlockState blockState : blockStates) {
+                if (poiStatesToType.get(blockState) == fishermanEntry) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    public static void addBarrelsToPoi(List<Block> barrels) {
+        Map<BlockState, Holder<PoiType>> poiStatesToType = PoiTypesAccessor
+                .getPointOfInterestStatesToType();
+
+        Holder<PoiType> fishermanEntry = BuiltInRegistries.POINT_OF_INTEREST_TYPE
+                .get(PoiTypes.FISHERMAN).get();
+
+        PoiType fishermanPoiType = BuiltInRegistries.POINT_OF_INTEREST_TYPE.getValue(PoiTypes.FISHERMAN);
+
+
+
+        for (Block block : barrels) {
+            ImmutableList<BlockState> blockStates = block.getStateDefinition().getPossibleStates();
+
+            for (BlockState blockState : blockStates) {
+                poiStatesToType.putIfAbsent(blockState, fishermanEntry);
+            }
+
+
+        }
+
+
+    }
+}

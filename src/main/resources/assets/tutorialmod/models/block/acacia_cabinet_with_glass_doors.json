@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "down": "tutorialmod:block/acacia_cabinet_top",
+    "east": "tutorialmod:block/acacia_cabinet_side",
+    "north": "tutorialmod:block/acacia_cabinet_with_glass_doors_front",
+    "south": "tutorialmod:block/acacia_cabinet_side",
+    "up": "tutorialmod:block/acacia_cabinet_top",
+    "west": "tutorialmod:block/acacia_cabinet_side",
+    "particle": "tutorialmod:block/acacia_cabinet_with_glass_doors_front"
+  }
+}

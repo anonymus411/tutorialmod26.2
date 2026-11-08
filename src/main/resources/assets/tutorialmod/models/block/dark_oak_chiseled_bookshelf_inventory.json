@@ -1,0 +1,9 @@
+{
+  "parent": "tutorialmod:block/parent_chiseled_bookshelf_inventory",
+  "textures": {
+    "front": "tutorialmod:block/dark_oak_chiseled_bookshelf_empty",
+    "particle": "tutorialmod:block/dark_oak_chiseled_bookshelf_top",
+    "side": "tutorialmod:block/dark_oak_chiseled_bookshelf_side",
+    "top": "tutorialmod:block/dark_oak_chiseled_bookshelf_top"
+  }
+}

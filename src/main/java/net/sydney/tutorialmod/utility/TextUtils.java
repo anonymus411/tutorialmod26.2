@@ -34,7 +34,7 @@ public class TextUtils
 	public static final MutableComponent DEBUG_ITEM = tooltip("debug_item").withStyle(ChatFormatting.RED);
 
 	/**
-	 * Syntactic sugar for custom translation keys. Always prefixed with the mod's ID in lang files (e.g. farmersdelight.your.key.here).
+	 * Syntactic sugar for custom translation keys. Always prefixed with the mod's ID in lang files (e.g. TutorialMod.your.key.here).
 	 */
 	public static MutableComponent getTranslation(String key, Object... args) {
 		return Component.translatable(TutorialMod.MOD_ID + "." + key, args);
@@ -42,7 +42,7 @@ public class TextUtils
 
 	/**
 	 * Gets text from a translation key, where "type" prefixes Farmer's Delight's mod ID.
-	 * Example: "type.farmersdelight.key".
+	 * Example: "type.TutorialMod.key".
 	 *
 	 * @param translationType The type of lang being read, added as a prefix
 	 * @param translationKey  The key itself, added as a suffix after the mod ID

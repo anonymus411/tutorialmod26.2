@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "tutorialmod:block/rich_soil"
+      },
+      {
+        "model": "tutorialmod:block/rich_soil",
+        "y": 90
+      },
+      {
+        "model": "tutorialmod:block/rich_soil",
+        "y": 180
+      },
+      {
+        "model": "tutorialmod:block/rich_soil",
+        "y": 270
+      }
+    ]
+  }
+}

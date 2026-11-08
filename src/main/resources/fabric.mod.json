@@ -19,25 +19,36 @@
 			"net.sydney.tutorialmod.TutorialMod"
 		],
 		"client": [
-			"net.sydney.tutorialmod.client.TutorialModClientFabric"
+			"net.sydney.tutorialmod.client.TutorialModClient"
 
 		],
 		"fabric-datagen": [
-			"net.sydney.tutorialmod.TutorialModDataGenerator"
+			"net.sydney.tutorialmod.data.DataGenerators"
+		],
+		"jei_mod_plugin": [
+			"net.sydney.tutorialmod.integration.jei.JEIPlugin"
+		],
+		"rei_client": [
+			"net.sydney.tutorialmod.integration.rei.client.ClientREIPlugin"
+		],
+		"rei_common": [
+			"net.sydney.tutorialmod.integration.rei.CommonREIPlugin"
+		],
+		"modmenu": [
+			"net.sydney.tutorialmod.integration.modmenu.ModMenuCompat"
 		]
-	},
+},
 	"mixins": [
 		"tutorialmod.mixins.json"
 	],
-
-
-
+	"accessWidener": "tutorialmod.classtweaker",
+	"accessWidener": "tutorialmod.accesswidener",
 	"depends": {
 		"fabricloader": ">=0.19.3",
 		"minecraft": "~26.2",
 		"java": ">=25",
 		"fabric-permissions-api-v0": "0.7.0",
-		"yet_another_config_lib_v3": ">=3.9.5"
+		"yet_another_config_lib_v3": ">=3.9.4+26.2-fabric"
 	}
 
 	}

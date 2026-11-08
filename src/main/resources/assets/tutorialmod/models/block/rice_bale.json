@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "tutorialmod:block/rice_bale_bottom",
+    "side": "tutorialmod:block/rice_bale_side",
+    "top": "tutorialmod:block/rice_bale_top"
+  }
+}

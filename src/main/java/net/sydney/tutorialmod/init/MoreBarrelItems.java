@@ -1,0 +1,79 @@
+package net.sydney.tutorialmod.init;
+
+
+
+import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
+import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.tags.TagKey;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.level.block.Block;
+import net.sydney.tutorialmod.TutorialMod;
+import net.sydney.tutorialmod.block.MoreBarrelBlock;
+
+import java.util.List;
+
+import static net.sydney.tutorialmod.TutorialMod.withMOD_ID;
+
+
+public class MoreBarrelItems {
+    public static final Item OAK_BARREL = itemFromBlock(MoreBarrelBlocks.OAK_BARREL);
+    public static final Item BIRCH_BARREL = itemFromBlock(MoreBarrelBlocks.BIRCH_BARREL);
+    public static final Item JUNGLE_BARREL = itemFromBlock(MoreBarrelBlocks.JUNGLE_BARREL);
+    public static final Item ACACIA_BARREL = itemFromBlock(MoreBarrelBlocks.ACACIA_BARREL);
+    public static final Item DARK_OAK_BARREL = itemFromBlock(MoreBarrelBlocks.DARK_OAK_BARREL);
+  ;
+    public static final Item MANGROVE_BARREL = itemFromBlock(MoreBarrelBlocks.MANGROVE_BARREL);
+    public static final Item CHERRY_BARREL = itemFromBlock(MoreBarrelBlocks.CHERRY_BARREL);
+    public static final Item BAMBOO_BARREL = itemFromBlock(MoreBarrelBlocks.BAMBOO_BARREL);
+    public static final Item CRIMSON_BARREL = itemFromBlock(MoreBarrelBlocks.CRIMSON_BARREL, true);
+    public static final Item WARPED_BARREL = itemFromBlock(MoreBarrelBlocks.WARPED_BARREL, true);
+
+    public static final TagKey<Item> BARRELS_TAG = TagKey.create(Registries.ITEM, withMOD_ID("barrels"));
+
+    public static BlockItem itemFromBlock(Block block) {
+        return itemFromBlock(block, false);
+    }
+
+    public static BlockItem itemFromBlock(Block block, boolean isNether) {
+        return new BlockItem(block, setProperties(block, isNether));
+    }
+
+    public static Item.Properties setProperties(Block block, boolean isNether) {
+        Item.Properties properties = new Item.Properties()
+                .setId(ResourceKey.create(Registries.ITEM,BuiltInRegistries.BLOCK.getKey(block))).useBlockDescriptionPrefix();
+        if (isNether) properties.fireResistant();
+        return properties;
+    }
+
+    public static final List<Item> more_barrels = List.of(
+            OAK_BARREL,
+            BIRCH_BARREL,
+            JUNGLE_BARREL,
+            ACACIA_BARREL,
+            DARK_OAK_BARREL,
+
+            MANGROVE_BARREL,
+            CHERRY_BARREL,
+            BAMBOO_BARREL,
+            CRIMSON_BARREL,
+            WARPED_BARREL
+    );
+
+    public static void registerItems() {
+        for (int i = 0; i != more_barrels.size(); ++i) {
+            Item barrel = more_barrels.get(i);
+            Item previousBarrel = i == 0 ? Items.BARREL : more_barrels.get(i - 1);
+            String barrelName = ((MoreBarrelBlock) ((BlockItem) barrel).getBlock()).barrelWoodType + "_barrel";
+            Registry.register(BuiltInRegistries.ITEM, withMOD_ID(barrelName), barrel);
+            // mod_id change from lolmblv to more_barrel_variants - alias for backwards compatibility
+            BuiltInRegistries.ITEM.addAlias(withMOD_ID(barrelName, true), withMOD_ID(barrelName));
+            CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FUNCTIONAL_BLOCKS).register(entries -> entries.insertAfter(previousBarrel, barrel));
+        }
+    }
+}

@@ -14,21 +14,66 @@ repositories {
 	// for more information about repositories.
 
 	maven {
-
-		url = 'https://maven.isxander.dev/releases'
-
-
-		mavenCentral()
+		name = 'Xander Maven'
+		url = "https://maven.isxander.dev/releases"
 
 
 	}
 
-	dependencies {
-		api("me.lucko:fabric-permissions-api:0.7.0")
+
+	loom {
+		accessWidenerPath = file("src/main/resources/tutorialmod.classtweaker")
+		accessWidenerPath = file("src/main/resources/tutorialmod.accesswidener")
 	}
-	fabricApi {
-		configureDataGeneration {
-			client = true
+
+	repositories {
+
+		flatDir {
+			dirs 'mods'
+		}
+
+		maven { url "https://maven.parchmentmc.org" }
+
+		maven {
+			url = "https://www.cursemaven.com"
+			allowInsecureProtocol = true
+		}
+
+		maven {
+			url "https://maven.firstdarkdev.xyz/snapshots"
+		}
+
+		maven {
+			name = 'Ladysnake Mods'
+			url = 'https://maven.ladysnake.org/releases'
+		}
+
+		maven {
+			url = "https://api.modrinth.com/maven"
+		}
+
+		maven {
+			// CraftTweaker, JEI
+			name = "BlameJared"
+			url = "https://maven.blamejared.com/"
+		}
+		maven { url "https://maven.ryanliptak.com/" } // AppleSkin
+		maven { url = "https://maven.parchmentmc.org" } // Parchment
+		maven { url = "https://maven.fabricmc.net/" } // FAPI, Loader
+		maven { url = "https://maven.architectury.dev/" } // REI and deps
+		maven { url = "https://maven.shedaniel.me/" } // REI and deps
+		maven { url = "https://maven.terraformersmc.com/" } // Mod Menu, EMI
+		mavenCentral() // Mixin Extras
+		exclusiveContent {
+			forRepository {
+				maven {
+					name = "cassian's maven"
+					url = "https://maven.cassian.cc"
+				}
+			}
+			filter {
+				includeGroup("cc.cassian.rrv")
+			}
 		}
 	}
 
@@ -37,30 +82,87 @@ repositories {
 		minecraft "com.mojang:minecraft:${project.minecraft_version}"
 		implementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
+		//mappings "net.fabricmc:yarn:${project.yarn_mappings}"
+
 		// Fabric API. This is technically optional, but you probably want it anyway.
 		implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+		implementation "curse.maven:epherolib-885449:8544496"
+		implementation "net.fabricmc.fabric-api:fabric-api:${fabric_api_version}"
+
+		//config stuff. optional
+		compileOnly("me.shedaniel.cloth:cloth-config-neoforge:${cloth_version}")
+		compileOnly("curse.maven:yacl-667299:7353769")
+		implementation "dev.isxander:yet-another-config-lib:${project.yacl_version}"
 
 
+//modImplementation"dev.isxander:yet-another-config-lib:${project.yacl_version}"
+
+		compileOnly("maven.modrinth:modmenu:${project.modmenu_version}")
+//    modLocalRuntime("com.terraformersmc:modmenu:${project.modmenu_version}")
+
+//    modCompileOnly("com.blamejared.crafttweaker:CraftTweaker-fabric-${minecraft_version}:${crafttweaker_version}")
+		// Uncomment the below to test CraftTweaker.
+		// modLocalRuntime("com.blamejared.crafttweaker:CraftTweaker-fabric-${minecraft_version}:${crafttweaker_version}")
+
+		//   modCompileOnly "me.shedaniel:RoughlyEnoughItems-api-fabric:$rei_version"
+		//  modCompileOnly "me.shedaniel:RoughlyEnoughItems-default-plugin-fabric:$rei_version"
+		// REI Runtime for Fabric
+		// modRuntimeOnly "me.shedaniel:RoughlyEnoughItems-fabric:$"
 
 
+		compileOnly("mezz.jei:jei-26.1.2-common-api:${jei_version}")
+		compileOnly("mezz.jei:jei-26.1.2-fabric-api:${jei_version}")
+//    modCompileOnly "me.shedaniel:RoughlyEnoughItems-api-fabric:VERSION"
+				// modRuntimeOnly "me.shedaniel:RoughlyEnoughItems-fabric:VERSION"
 
-		compileOnly("com.google.auto.service:auto-service:1.1.1")
-		annotationProcessor("com.google.auto.service:auto-service:1.1.1")
-		loom.accessWidenerPath.set(file("src/main/resources/tutorialmod.accesswidener"))
-	}
 
-	processResources {
-		def version = project.version
-		inputs.property "version", version
-		duplicatesStrategy = DuplicatesStrategy.INCLUDE
+//    modRuntimeOnly "me.shedaniel:RoughlyEnoughItems-fabric:26.2"
+				//modCompileOnly "me.shedaniel:RoughlyEnoughItems-default-plugin:26.2"
+				{
 
-		filesMatching("fabric.mod.json") {
-			expand "version": version
+
+					transitive = false
+				}
+		// Uncomment the below to test JEI.
+//     localRuntime("mezz.jei:jei-${minecraft_version}-fabric:${jei_version}")
+
+		compileOnly("me.shedaniel.cloth:basic-math:0.6.1")
+		compileOnly("dev.architectury:architectury-fabric:20.0.7")
+		compileOnly("me.shedaniel:RoughlyEnoughItems-api-fabric:${rei_version}") {
+			exclude(group: "dev.architectury")
 		}
+		compileOnly("me.shedaniel:RoughlyEnoughItems-default-plugin-fabric:${rei_version}") {
+			exclude(group: "dev.architectury")
+		}
+		// Uncomment the below to test REI.
+//      localRuntime("me.shedaniel:RoughlyEnoughItems-fabric:${rei_version}") {
+//          exclude(group: "dev.architectury")
+//      }
+//    localRuntime("dev.architectury:architectury-fabric:20.0.7")
+
+//    compileOnly("dev.emi:emi-fabric:${emi_version}:api") {
+//        exclude(group: "net.fabricmc.fabric-api")
+//    }
+		// Uncomment the below to test EMI.
+//    localRuntime("dev.emi:emi-fabric:${emi_version}") {
+//        exclude(group: "net.fabricmc.fabric-api")
+//    }
+
+		compileOnly("cc.cassian.rrv:reliable-recipe-viewer-fabric:${rrv_version}") {
+			exclude(group: "net.fabricmc.fabric-api")
+			exclude(group: "eu.pb4")
+		}
+		// Uncomment the below to test RRV.
+		localRuntime("cc.cassian.rrv:reliable-recipe-viewer-fabric:${rrv_version}") {
+			exclude(group: "net.fabricmc.fabric-api")
+			exclude(group: "eu.pb4")
+		}
+
+
 	}
 
 	java {
-		// Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
+		// Loom will automatically attach sourcesJar to a SourcesJar task and to the "build" task
 		// if it is present.
 		// If you remove this line, sources will not be generated.
 		withSourcesJar()
@@ -70,28 +172,109 @@ repositories {
 	}
 
 	jar {
-		def projectName = project.name
-		inputs.property "projectName", projectName
-
 		from("LICENSE") {
-			rename { "${it}_$projectName" }
+			rename { "${it}_${project.base.archivesName.get()}" }
 		}
 	}
 
 // configure the maven publication
 	publishing {
 		publications {
-			create("mavenJava", MavenPublication) {
+			mavenJava(MavenPublication) {
+				groupId project.group
+				artifactId project.base.archivesName.get()
+				version project.version
 				from components.java
 			}
 		}
 
-		// See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
 		repositories {
-			// Add repositories to publish to here.
-			// Notice: This block does NOT have the same function as the block in the top level.
-			// The repositories here will be used for publishing your artifact, not for
-			// retrieving dependencies.
+			maven {
+				name "greenhouse"
+				url "https://maven.greenhouse.lgbt/releases"
+				credentials {
+					username System.getenv('MAVEN_USERNAME')
+					password System.getenv('MAVEN_PASSWORD')
+				}
+				authentication {
+					create("basic", BasicAuthentication)
+				}
+			}
+			mavenCentral()
+
+
+			dependencies {
+				api("me.lucko:fabric-permissions-api:0.7.0")
+			}
+			fabricApi {
+				configureDataGeneration {
+					client = true
+				}
+			}
+
+
+			dependencies {
+				// To change the versions see the gradle.properties file
+				minecraft "com.mojang:minecraft:${project.minecraft_version}"
+				implementation "net.fabricmc:fabric-loader:${project.loader_version}"
+
+
+				// Fabric API. This is technically optional, but you probably want it anyway.
+				implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+
+
+				compileOnly("com.google.auto.service:auto-service:1.1.1")
+				annotationProcessor("com.google.auto.service:auto-service:1.1.1")
+				loom.accessWidenerPath.set(file("src/main/resources/tutorialmod.accesswidener"))
+				loom.accessWidenerPath.set(file("src/main/resources/tutorialmod.classtweaker"))
+				// Fabric (26.1 and above)
+				//implementation("cc.cassian.rrv:reliable-recipe-viewer-fabric:${rrv_version}+${minecraft_version}")
+
+
+				//modImplementation"dev.isxander:yet-another-config-lib:${project.yacl_version}"
+			}
+
+
+			processResources {
+				def version = project.version
+				inputs.property "version", version
+				duplicatesStrategy = DuplicatesStrategy.INCLUDE
+
+
+				filesMatching("fabric.mod.json") {
+					expand "version": version
+				}
+			}
+
+
+			java {
+				// Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
+				// if it is present.
+				// If you remove this line, sources will not be generated.
+				withSourcesJar()
+
+
+				sourceCompatibility = JavaVersion.VERSION_25
+				targetCompatibility = JavaVersion.VERSION_25
+			}
+
+
+			jar {
+				def projectName = project.name
+				inputs.property "projectName", projectName
+
+
+				from("LICENSE") {
+					rename { "${it}_$projectName" }
+				}
+
+
+				// See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
+				repositories {
+
+
+				}
+			}
 
 
 		}

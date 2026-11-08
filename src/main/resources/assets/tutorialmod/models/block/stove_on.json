@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable_with_bottom",
+  "textures": {
+    "bottom": "tutorialmod:block/stove_bottom",
+    "front": "tutorialmod:block/stove_front_on",
+    "side": "tutorialmod:block/stove_side",
+    "top": "tutorialmod:block/stove_top_on"
+  }
+}

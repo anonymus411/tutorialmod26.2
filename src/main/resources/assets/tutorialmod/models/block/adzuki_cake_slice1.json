@@ -1,0 +1,10 @@
+{
+  "parent": "block/cake_slice1",
+  "textures": {
+    "particle": "tutorialmod:block/adzuki_cake_side",
+    "bottom": "tutorialmod:block/adzuki_cake_bottom",
+    "top": "tutorialmod:block/adzuki_cake_top",
+    "side": "tutorialmod:block/adzuki_cake_side",
+    "inside": "tutorialmod:block/adzuki_cake_inner"
+  }
+}

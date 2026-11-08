@@ -1,0 +1,9 @@
+{
+    "parent": "minecraft:block/cube_bottom_top",
+    "textures": {
+        "bottom": "tutorialmod:block/bamboo_barrel_bottom",
+        "side": "tutorialmod:block/bamboo_barrel_side",
+        "top": "tutorialmod:block/bamboo_barrel_top",
+        "particle": "minecraft:block/bamboo_planks"
+    }
+}

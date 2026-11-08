@@ -1,0 +1,9 @@
+{
+    "parent": "minecraft:block/cube_bottom_top",
+    "textures": {
+        "bottom": "tutorialmod:block/warped_barrel_bottom",
+        "side": "tutorialmod:block/warped_barrel_side",
+        "top": "tutorialmod:block/warped_barrel_top",
+        "particle": "minecraft:block/warped_planks"
+    }
+}
